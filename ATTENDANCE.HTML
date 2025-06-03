@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mark Attendance</title>
+  <style>
+    body { font-family: Arial; background-color: #f9f8ff; }
+    form {
+      max-width: 400px; margin: auto; margin-top: 60px;
+      padding: 20px; background: white;
+      border: 2px solid #7c3aed; border-radius: 10px;
+    }
+    input, select, button {
+      width: 100%; padding: 10px; margin-top: 10px;
+      border: 1px solid #7c3aed; border-radius: 5px;
+    }
+    button { background-color: #7c3aed; color: white; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <form method="POST" action="ATTENDANCE.PHP">
+    <h2 style="text-align:center; color:#7c3aed;">Mark Attendance</h2>
+    <input type="number" name="student_id" placeholder="Student ID" required>
+    <select name="status">
+      <option value="Present">Present</option>
+      <option value="Absent">Absent</option>
+    </select>
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>
+ 

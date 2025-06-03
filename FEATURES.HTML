@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EduTrack - Features</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- FontAwesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+  <style>
+    .gradient-bg {
+      background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+    }
+    .card-hover:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    }
+    .feature-icon {
+      width: 60px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 12px;
+      margin-bottom: 1rem;
+    }
+    .equal-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease;
+  }
+
+  .equal-card:hover {
+    transform: translateY(-5px);
+  }
+
+  .feature-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+
+  a.card-link {
+    text-decoration: none;
+    color: inherit;
+  }
+  </style>
+</head>
+
+<body class="bg-light text-dark">
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="#">
+      <i class="fas fa-graduation-cap text-primary me-2"></i>
+      <span class="fw-bold text-primary">EduTrack</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto me-3">
+        <a href="HOME.html" class="btn btn-secondary"> Home</a>
+
+
+        <a href="ABOUT.HTML" class="btn btn-secondary"> About </a>
+
+        <a href="CONTACT US.HTML" class="btn btn-secondary"> Contact Us </a>
+
+      </ul>
+      
+    </div>
+  </div>
+</nav>
+
+<!-- Page Heading -->
+<section class="gradient-bg text-white pt-5" style="padding-top:100px;">
+  <div class="container text-center">
+    <h1 class="display-4 fw-bold">Our Features</h1>
+    <p class="lead mt-3">Powerful tools to simplify student management</p>
+  </div>
+</section>
+
+<!-- Features Section -->
+<section class="py-5">
+  <div class="container">
+    <div class="row g-4">
+      
+      <!-- Feature 1 -->
+    <div class="container py-5">
+  <div class="row g-4">
+    <!-- Student Profiles -->
+    <div class="col-md-4">
+      <a href="STUDENT PROFILE.HTML" class="card-link">
+        <div class="p-4 bg-white rounded-4 shadow-sm card-hover text-center equal-card">
+          <div class="feature-icon bg-primary bg-opacity-10 text-primary mx-auto">
+            <i class="fas fa-user-graduate fa-2x"></i>
+          </div>
+          <h5>Student Profiles</h5>
+          <p class="text-muted">Maintain detailed records of student information, academics, and progress with ease.</p>
+        </div>
+      </a>
+    </div>
+
+    <!-- Attendance -->
+    <div class="col-md-4">
+      <a href="ATTENDANCE.HTML" class="card-link">
+        <div class="p-4 bg-white rounded-4 shadow-sm card-hover text-center equal-card">
+          <div class="feature-icon bg-success bg-opacity-10 text-success mx-auto">
+            <i class="fas fa-calendar-check fa-2x"></i>
+          </div>
+          <h5>Attendance</h5>
+          <p class="text-muted">Track student attendance accurately and efficiently with real-time updates.</p>
+        </div>
+      </a>
+    </div>
+
+    <!-- Performance -->
+    <div class="col-md-4">
+      <a href="PERFOMANCE.HTML" class="card-link">
+        <div class="p-4 bg-white rounded-4 shadow-sm card-hover text-center equal-card">
+          <div class="feature-icon bg-info bg-opacity-10 text-info mx-auto">
+            <i class="fas fa-chart-line fa-2x"></i>
+          </div>
+          <h5>Performance</h5>
+          <p class="text-muted">Get smart insights on student performance to support learning improvements.</p>
+        </div>
+      </a>
+    </div>
+
+    <!-- Assignment Management -->
+    <div class="col-md-4 offset-md-4">
+      <a href="ASSIGNMENT.HTML" class="card-link">
+        <div class="p-4 bg-white rounded-4 shadow-sm card-hover text-center equal-card">
+          <div class="feature-icon bg-warning bg-opacity-10 text-warning mx-auto">
+            <i class="fas fa-comments fa-2x"></i>
+          </div>
+          <h5>Assignment Management</h5>
+          <p class="text-muted">Assign, collect, grade, and review assignments digitally without the paperwork mess.</p>
+        </div>
+      </a>
+    </div>
+
+     <div class="col-md-4">
+      <a href="ADD STUDENTS.HTML" class="card-link">
+        <div class="p-4 bg-white rounded-4 shadow-sm card-hover text-center equal-card">
+          <div class="feature-icon bg-info bg-opacity-10 text-info mx-auto">
+            <i class="fas fa-person-plus fa-2x"></i>
+          </div>
+          <h5>ADD STUDENTS</h5>
+          <p class="text-muted">Get smart insights on student performance to support learning improvements.</p>
+        </div>
+      </a>
+    </div>
+
+    
+  </div>
+</div>
+
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-light py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <h6 class="text-uppercase">Product</h6>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-light text-decoration-none">Features</a></li>
+          <li><a href="#" class="text-light text-decoration-none">Pricing</a></li>
+          <li><a href="#" class="text-light text-decoration-none">Demo</a></li>
+          <li><a href="#" class="text-light text-decoration-none">Updates</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <h6 class="text-uppercase">Company</h6>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-light text-decoration-none">About</a></li>
+          <li><a href="#" class="text-light text-decoration-none">Careers</a></li>
+          <li><a href="#" class="text-light text-decoration-none">Privacy</a></li>
+          <li><a href="#" class="text-light text-decoration-none">Terms</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <h6 class="text-uppercase">Support</h6>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-light text-decoration-none">Help Center</a></li>
+          <li><a href="#" class="text-light text-decoration-none">Documentation</a></li>
+          <li><a href="#" class="text-light text-decoration-none">Community</a></li>
+          <li><a href="#" class="text-light text-decoration-none">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <h6 class="text-uppercase">Connect</h6>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-light text-decoration-none">Facebook</a></li>
+          <li><a href="#" class="text-light text-decoration-none">Twitter</a></li>
+          <li><a href="#" class="text-light text-decoration-none">LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Bootstrap JS Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

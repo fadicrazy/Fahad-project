@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Login | Student Management System</title>
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <style>
+    body {
+      background: linear-gradient(135deg, #4f46e5, #7c3aed);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Poppins', sans-serif;
+    }
+    .login-card {
+      background: #fff;
+      padding: 2rem;
+      border-radius: 1rem;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+      width: 100%;
+      max-width: 400px;
+    }
+    .login-title {
+      color: #4f46e5;
+      font-weight: bold;
+    }
+    .form-control:focus {
+      border-color: #7c3aed;
+      box-shadow: 0 0 0 0.2rem rgba(124, 58, 237, 0.25);
+    }
+    .btn-login {
+      background-color: #7c3aed;
+      border: none;
+    }
+    .btn-login:hover {
+      background-color: #5b21b6;
+    }
+    .small-text {
+      color: #6c757d;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="login-card">
+    <h2 class="text-center login-title mb-4">Login</h2>
+
+    <form id="loginForm">
+      <div class="mb-3">
+        <label for="email" class="form-label">Email address</label>
+        <input
+          type="email"
+          class="form-control"
+          id="email"
+          placeholder="Enter email"
+          required
+        />
+      </div>
+
+      <div class="mb-3">
+        <label for="password" class="form-label">Password</label>
+        <input
+          type="password"
+          class="form-control"
+          id="password"
+          placeholder="Password"
+          required
+        />
+      </div>
+
+      <div class="d-flex justify-content-between align-items-center mb-4">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="rememberMe" />
+          <label class="form-check-label" for="rememberMe">Remember me</label>
+        </div>
+        <a href="#" class="small-text text-decoration-none">Forgot Password?</a>
+      </div>
+
+      <div class="d-grid">
+        <button type="submit" class="btn btn-login btn-lg text-white">Login</button>
+      </div>
+
+      <p class="text-center small-text mt-4">
+        Don't have an account?
+        <a href="REGISTER.HTML" class="text-decoration-none" style="color: #7c3aed"
+          >Register</a
+        >
+      </p>
+    </form>
+  </div>
+
+  <!-- Bootstrap 5 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom JS for login -->
+  <script>
+    document.getElementById('loginForm').addEventListener('submit', function (e) {
+      e.preventDefault(); // prevent page refresh
+
+      const email = document.getElementById('email').value.trim();
+      const password = document.getElementById('password').value.trim();
+
+      // Simulated login validation (replace this with backend check)
+      // Example: only allow email: student@example.com and password: 1234
+      if (email === 'fahad@students.com' && password === '1234') {
+        // Redirect to main front page (change this to your actual main page)
+        window.location.href = 'HOME.html';
+      } else {
+        alert('Invalid email or password. Please try again.');
+      }
+    });
+  </script>
+</body>
+</html>
